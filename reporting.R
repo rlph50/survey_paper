@@ -1,8 +1,6 @@
 library(tidyverse)
 library(scales)
 
-setwd("~/UniWork/Ggbr Research/Survey Paper/3.1 Statistical Papers Submission/sims")
-
 df100 <- readRDS("sim_100/results_22_40_80.RDS")
 be100 <- readRDS('sim_100/bayes_est.rds') %>%
   select(d_mean,f_mean,phi_mean,t) %>%
